@@ -1,2 +1,2 @@
 # CodeEval-Solutions
-Solutions for Medium and Hard questions
+Solutions for some of the questions
