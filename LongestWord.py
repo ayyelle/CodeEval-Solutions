@@ -1,6 +1,8 @@
-#This is not the complete solution, it is missing the opening files part, so it won't 100% compile:
+#I solved the 'Longest Word' challenge on @codeeval. http://www.codeeval.com/browse/111
 
-for line in file:
+import sys
+test_cases = open(sys.argv[1], 'r')
+for line in test_cases:
     arrayofWords = line.strip().split(" ");
     longestWordSoFar = "";
     longestLengthSoFar = 0;
@@ -9,3 +11,5 @@ for line in file:
             longestLengthSoFar = len(word);
             longestWordSoFar = word;
     print(longestWordSoFar);
+    
+test_cases.close()
