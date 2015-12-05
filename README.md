@@ -1,2 +1,2 @@
 # CodeEval-Solutions
-Solutions for some of the questions
+My solutions for some of the questions
