@@ -1,4 +1,3 @@
-#Sample code to read in test cases:
 #I solved the Lettercase Percentage Ratio  challenge on @codeeval.http://www.codeeval.com/browse/147
 import sys
 test_cases = open(sys.argv[1], 'r')
