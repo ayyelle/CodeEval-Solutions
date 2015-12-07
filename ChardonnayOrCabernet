@@ -1,0 +1,28 @@
+#I solved the Chardonnay or Cabernet challenge on @codeeval.http://www.codeeval.com/browse/211
+import sys
+test_cases = open(sys.argv[1], 'r')
+for inputString in test_cases:
+    listToFind = inputString.strip().split("|");
+    firstItem = listToFind[0].strip().split(" ");
+    secondItem = listToFind[1].strip();
+    listToPrint= [];
+
+    for word in firstItem:
+        trueCount = 0;
+        originalWord = word;
+        for lt in secondItem:
+            if (lt not in word.lower()):
+                break;
+            else:
+                word = word.replace(lt,"",1);
+                trueCount +=1;
+        if (trueCount >= len(secondItem)):
+            listToPrint.append(originalWord);
+  
+
+    if (len(listToPrint)>0):
+        print " ".join(listToPrint);
+    else:
+        print "False";
+
+test_cases.close()
