@@ -14,4 +14,4 @@ for inputString in test_cases:
     else:
         print("false");
 
-test_cases.close()
+test_cases.close();
